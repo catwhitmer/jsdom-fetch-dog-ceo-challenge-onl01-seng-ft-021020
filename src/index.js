@@ -9,10 +9,10 @@ fetch(imgUrl)
    dogImages(result.message)
 })
 
-  function dogImages(dogs){
-    console.log(dogs)
-    dogs.forEach(dog => {
-      console.log(dog)
+function dogImages(dogs){
+  console.log(dogs)
+  dogs.forEach(dog => {
+  console.log(dog)
       const goodBoyContainer = document.querySelector('#dog-image-container')
       const goodBoy = document.createElement('img')
       goodBoy.src = dog
