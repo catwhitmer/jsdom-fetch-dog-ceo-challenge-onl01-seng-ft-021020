@@ -3,11 +3,11 @@ console.log('%c HI', 'color: firebrick')
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
 const breedUrl = 'https://dog.ceo/api/breeds/list/all'
 
-  fetch(imgUrl)
+fetch(imgUrl)
   .then(response => response.json())
   .then(result => {
-    dogImages(result.message)
-  })
+   dogImages(result.message)
+})
 
   function dogImages(dogs){
     console.log(dogs)
